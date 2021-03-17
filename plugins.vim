@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/vim-plug')
   Plug 'mhinz/vim-startify'
   Plug 'morhetz/gruvbox'
   Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/completion-nvim'
   " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'

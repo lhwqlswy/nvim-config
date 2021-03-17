@@ -46,17 +46,14 @@ source $HOME/.config/nvim/plugins.vim
 let mapleader=" "
 
 source $HOME/.config/nvim/plug-config/airline.vim
-source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/lsp.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/gruvbox.vim
-source $HOME/.config/nvim/plug-config/highlightedyank.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/netrw.vim
 source $HOME/.config/nvim/plug-config/rg.vim
-" TODO: remove it later
-source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/react.vim
@@ -80,4 +77,7 @@ nnoremap <Leader>- :vertical resize -5<CR>
 nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>te :tabedit %<CR>
 nnoremap <Leader>tc :tabclose<CR>
+
+" yank
+au TextYankPost * silent! lua vim.highlight.on_yank {timeout=500}
 

@@ -1,10 +1,14 @@
 autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | Startify | endif
-autocmd VimEnter * if argc() == 1 && argv(0) == '.' | call InitLayout() | endif
-nnoremap <Leader>pv :call InitLayout()<CR>
+" open nerdtree when opening vim
+" autocmd VimEnter * if argc() == 1 && argv(0) == '.' | call InitLayout() | endif
+nnoremap <Leader>nv :call InitLayout()<CR>
+nnoremap <Leader>nf :NERDTreeFind<CR>
+nnoremap <Leader>nb :Bookmark<CR>
+
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeMapJumpNextSibling='<Nop>'
 let g:NERDTreeMapJumpPrevSibling='<Nop>'
+let g:NERDTreeShowBookmarks=1
 
 function! InitLayout() abort
   execute ":NERDTreeFocus"

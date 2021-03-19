@@ -20,5 +20,6 @@ call plug#begin('~/.config/nvim/vim-plug')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'vim-utils/vim-man'
   Plug 'voldikss/vim-floaterm'
+  Plug 'vimwiki/vimwiki'
 call plug#end()
 

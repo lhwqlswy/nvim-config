@@ -56,6 +56,7 @@ source $HOME/.config/nvim/plug-config/netrw.vim
 source $HOME/.config/nvim/plug-config/rg.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
+source $HOME/.config/nvim/plug-config/vimwiki.vim
 source $HOME/.config/nvim/plug-config/react.vim
 
 filetype on

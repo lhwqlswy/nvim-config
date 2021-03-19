@@ -1,6 +1,7 @@
 " LSP
 luafile ~/.config/nvim/lsp/lua.lua
 luafile ~/.config/nvim/lsp/vim.lua
+luafile ~/.config/nvim/lsp/golang.lua
 
 " LSP mapping
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>

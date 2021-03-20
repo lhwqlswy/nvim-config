@@ -1,4 +1,4 @@
-call plug#begin('~/.config/nvim/vim-plug')
+call plug#begin('~/.config/nvim/plugs')
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -10,9 +10,9 @@ call plug#begin('~/.config/nvim/vim-plug')
   Plug 'morhetz/gruvbox'
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/completion-nvim'
-  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'tbabej/taskwiki'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'

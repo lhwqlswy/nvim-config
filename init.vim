@@ -45,19 +45,20 @@ source $HOME/.config/nvim/plugins.vim
 " map
 let mapleader=" "
 
-source $HOME/.config/nvim/plug-config/airline.vim
-source $HOME/.config/nvim/plug-config/lsp.vim
-source $HOME/.config/nvim/plug-config/floaterm.vim
-source $HOME/.config/nvim/plug-config/fugitive.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/gruvbox.vim
-source $HOME/.config/nvim/plug-config/nerdtree.vim
-source $HOME/.config/nvim/plug-config/netrw.vim
-source $HOME/.config/nvim/plug-config/rg.vim
-source $HOME/.config/nvim/plug-config/undotree.vim
-source $HOME/.config/nvim/plug-config/vimtex.vim
-source $HOME/.config/nvim/plug-config/vimwiki.vim
-source $HOME/.config/nvim/plug-config/react.vim
+source $HOME/.config/nvim/plugs-config/airline.vim
+source $HOME/.config/nvim/plugs-config/lsp.vim
+source $HOME/.config/nvim/plugs-config/floaterm.vim
+source $HOME/.config/nvim/plugs-config/fugitive.vim
+source $HOME/.config/nvim/plugs-config/fzf.vim
+source $HOME/.config/nvim/plugs-config/gruvbox.vim
+source $HOME/.config/nvim/plugs-config/nerdtree.vim
+source $HOME/.config/nvim/plugs-config/netrw.vim
+source $HOME/.config/nvim/plugs-config/rg.vim
+source $HOME/.config/nvim/plugs-config/taskwiki.vim
+source $HOME/.config/nvim/plugs-config/undotree.vim
+source $HOME/.config/nvim/plugs-config/vimtex.vim
+source $HOME/.config/nvim/plugs-config/vimwiki.vim
+source $HOME/.config/nvim/plugs-config/react.vim
 
 filetype on
 filetype plugin on

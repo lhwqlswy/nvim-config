@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'mhinz/vim-startify'
   Plug 'morhetz/gruvbox'
   Plug 'neovim/nvim-lspconfig'
-  Plug 'nvim-lua/completion-nvim'
+  Plug 'hrsh7th/nvim-compe'
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   Plug 'tbabej/taskwiki'

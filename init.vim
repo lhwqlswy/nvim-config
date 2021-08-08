@@ -2,7 +2,6 @@ syntax on
 
 set autoread
 set autowrite
-set background=dark
 set backspace=indent,eol,start
 set clipboard=unnamed
 set cmdheight=2
@@ -30,6 +29,7 @@ set shiftwidth=2
 set smartcase
 set smartindent
 set tabstop=2 softtabstop=2
+set termguicolors
 set timeoutlen=1000
 set ttimeoutlen=100
 set undodir=~/.config/nvim/undo
@@ -50,7 +50,6 @@ source $HOME/.config/nvim/plugs-config/lsp.vim
 source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 source $HOME/.config/nvim/plugs-config/fzf.vim
-source $HOME/.config/nvim/plugs-config/gruvbox.vim
 source $HOME/.config/nvim/plugs-config/nerdtree.vim
 source $HOME/.config/nvim/plugs-config/netrw.vim
 source $HOME/.config/nvim/plugs-config/rg.vim
@@ -79,6 +78,9 @@ nnoremap <Leader>- :vertical resize -5<CR>
 nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>te :tabedit %<CR>
 nnoremap <Leader>tc :tabclose<CR>
+" nearest square bracket
+nnoremap ]b :call searchpair('\[','','\]')<cr>
+nnoremap [b :call searchpair('\[','','\]','b')<cr>
 
 " yank
 au TextYankPost * silent! lua vim.highlight.on_yank {timeout=500}

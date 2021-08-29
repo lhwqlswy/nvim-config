@@ -1,9 +1,9 @@
 call plug#begin('~/.config/nvim/plugs')
   Plug 'airblade/vim-gitgutter'
-  Plug 'christoomey/vim-tmux-navigator'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
-  Plug 'lervag/vimtex'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
   " Plug 'maxmellon/vim-jsx-pretty'
   Plug 'mbbill/undotree'
   Plug 'mhinz/vim-startify'

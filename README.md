@@ -9,4 +9,10 @@ brew install ripgrep
 # icons
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
+
+# nodejs
+brew ?
+
+# lsp
+npm add -g typescript-language-server
 ```

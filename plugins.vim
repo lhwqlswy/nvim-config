@@ -4,10 +4,11 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'junegunn/fzf.vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  " Plug 'maxmellon/vim-jsx-pretty'
   Plug 'mbbill/undotree'
   Plug 'mhinz/vim-startify'
   Plug 'morhetz/gruvbox'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  Plug 'nvim-treesitter/playground'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'preservim/nerdtree'

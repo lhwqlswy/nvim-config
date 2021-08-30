@@ -54,11 +54,11 @@ source $HOME/.config/nvim/plugs-config/fugitive.vim
 source $HOME/.config/nvim/plugs-config/telescope.vim
 source $HOME/.config/nvim/plugs-config/nerdtree.vim
 source $HOME/.config/nvim/plugs-config/netrw.vim
+source $HOME/.config/nvim/plugs-config/treesitter.vim
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/taskwiki.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim
 source $HOME/.config/nvim/plugs-config/vimwiki.vim
-source $HOME/.config/nvim/plugs-config/react.vim
 
 filetype on
 filetype plugin on

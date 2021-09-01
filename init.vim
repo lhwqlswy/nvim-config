@@ -56,9 +56,9 @@ source $HOME/.config/nvim/plugs-config/nerdtree.vim
 source $HOME/.config/nvim/plugs-config/netrw.vim
 source $HOME/.config/nvim/plugs-config/treesitter.vim
 "source $HOME/.config/nvim/plugs-config/rg.vim
-source $HOME/.config/nvim/plugs-config/taskwiki.vim
+"source $HOME/.config/nvim/plugs-config/taskwiki.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim
-source $HOME/.config/nvim/plugs-config/vimwiki.vim
+"source $HOME/.config/nvim/plugs-config/vimwiki.vim
 
 filetype on
 filetype plugin on

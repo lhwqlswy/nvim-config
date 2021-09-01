@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/plugs')
   Plug 'airblade/vim-gitgutter'
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+  "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  "Plug 'junegunn/fzf.vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'mbbill/undotree'
@@ -13,7 +13,7 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'hrsh7th/nvim-compe'
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'tbabej/taskwiki'
+  "Plug 'tbabej/taskwiki'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
@@ -21,6 +21,6 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'vim-utils/vim-man'
   Plug 'voldikss/vim-floaterm'
-  Plug 'vimwiki/vimwiki'
+  "Plug 'vimwiki/vimwiki'
 call plug#end()
 

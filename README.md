@@ -14,5 +14,5 @@ brew install --cask font-hack-nerd-font
 brew ?
 
 # lsp
-npm add -g typescript-language-server
+# lsp/install folder
 ```

@@ -1,5 +1,5 @@
-#!/bin/bash
-
+#!/bin/zsh
+brew install ninja
 cd ~
 mkdir -p ~/lsp
 cd ~/lsp
@@ -9,6 +9,6 @@ git submodule update --init --recursive
 # sudo apt install ninja-build
 
 cd 3rd/luamake
-ninja -f ninja/linux.ninja
+compile/install.sh
 cd ../..
 ./3rd/luamake/luamake rebuild

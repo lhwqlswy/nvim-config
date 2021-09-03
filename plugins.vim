@@ -1,7 +1,5 @@
 call plug#begin('~/.config/nvim/plugs')
   Plug 'airblade/vim-gitgutter'
-  "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  "Plug 'junegunn/fzf.vim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'mbbill/undotree'
@@ -11,8 +9,8 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'nvim-treesitter/playground'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
-  Plug 'preservim/nerdtree'
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'kyazdani42/nvim-web-devicons' " for file icons
+  Plug 'kyazdani42/nvim-tree.lua'
   "Plug 'tbabej/taskwiki'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'

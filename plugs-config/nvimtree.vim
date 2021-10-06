@@ -1,5 +1,7 @@
+"autocmd VimEnter * if argc() == 1 && argv(0) == '.' | call InitLayout() | endif
+"nnoremap <Leader>nv :call ShowNvimTree()<CR>
 autocmd VimEnter * if argc() == 1 && argv(0) == '.' | call InitLayout() | endif
-nnoremap <Leader>nv :call ShowNvimTree()<CR>
+nnoremap <Leader>nv :NvimTreeFocus<CR>
 
 function! ShowNvimTree() abort
   execute ":NvimTreeToggle"
@@ -12,8 +14,9 @@ function! ShowNvimTree() abort
 endfunction
 
 function! InitLayout() abort
-  execute ":NvimTreeFocus"
-  execute ":wincmd l | :Startify"
+  "execute ":NvimTreeFocus"
+  "execute ":wincmd l | :Startify"
+  execute ":Startify"
 endfunction
 
 let g:nvim_tree_side = 'left' "left by default

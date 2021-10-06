@@ -51,7 +51,7 @@ source $HOME/.config/nvim/plugs-config/compe.vim
 source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 "source $HOME/.config/nvim/plugs-config/fzf.vim
-source $HOME/.config/nvim/plugs-config/telescope.vim
+luafile $HOME/.config/nvim/plugs-config/telescope.lua
 luafile $HOME/.config/nvim/plugs-config/nvimwebdevicons.lua
 source $HOME/.config/nvim/plugs-config/nvimtree.vim
 source $HOME/.config/nvim/plugs-config/treesitter.vim

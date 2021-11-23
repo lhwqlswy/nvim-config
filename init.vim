@@ -12,6 +12,7 @@ set encoding=utf8
 set nohlsearch
 set expandtab
 set exrc
+set guifont=Hack_Nerd_Font_Mono:h11
 set incsearch
 set laststatus=2
 set modelines=0
@@ -52,8 +53,8 @@ source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 "source $HOME/.config/nvim/plugs-config/fzf.vim
 luafile $HOME/.config/nvim/plugs-config/telescope.lua
-luafile $HOME/.config/nvim/plugs-config/nvimwebdevicons.lua
-source $HOME/.config/nvim/plugs-config/nvimtree.vim
+"source $HOME/.config/nvim/plugs-config/nvimtree.vim
+source $HOME/.config/nvim/plugs-config/nerdtree.vim
 source $HOME/.config/nvim/plugs-config/treesitter.vim
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim

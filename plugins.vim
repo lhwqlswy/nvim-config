@@ -9,8 +9,12 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'nvim-treesitter/playground'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
-  Plug 'kyazdani42/nvim-web-devicons' " for file icons
-  Plug 'kyazdani42/nvim-tree.lua'
+  "Plug 'kyazdani42/nvim-web-devicons' " for file icons
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  "too many files open error
+  "Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'preservim/nerdtree'
   "Plug 'tbabej/taskwiki'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'

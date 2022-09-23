@@ -15,6 +15,7 @@ luafile ~/.config/nvim/lsp/lua.lua
 luafile ~/.config/nvim/lsp/vim.lua
 luafile ~/.config/nvim/lsp/golang.lua
 luafile ~/.config/nvim/lsp/ts.lua
+luafile ~/.config/nvim/lsp/julia.lua
 
 " LSP mapping
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>

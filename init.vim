@@ -23,7 +23,7 @@ set noerrorbells
 set nofixendofline
 set noswapfile
 set nu
-set relativenumber
+"set relativenumber
 set ruler
 set scrolloff=5
 set shiftwidth=2
@@ -40,22 +40,25 @@ set wrap
 "set cursorline
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-
 source $HOME/.config/nvim/plugins.vim
 
 " map
 let mapleader=" "
 
-source $HOME/.config/nvim/plugs-config/airline.vim
+"source $HOME/.config/nvim/plugs-config/airline.vim
 source $HOME/.config/nvim/plugs-config/lsp.vim
 source $HOME/.config/nvim/plugs-config/compe.vim
 source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 "source $HOME/.config/nvim/plugs-config/fzf.vim
 luafile $HOME/.config/nvim/plugs-config/telescope.lua
-"source $HOME/.config/nvim/plugs-config/nvimtree.vim
-source $HOME/.config/nvim/plugs-config/nerdtree.vim
+luafile $HOME/.config/nvim/plugs-config/indent.lua
+luafile $HOME/.config/nvim/plugs-config/nvimtree.lua
+"source $HOME/.config/nvim/plugs-config/nerdtree.vim
+luafile $HOME/.config/nvim/plugs-config/nightfox.lua
+"luafile $HOME/.config/nvim/plugs-config/tokyonight.lua
 source $HOME/.config/nvim/plugs-config/treesitter.vim
+luafile $HOME/.config/nvim/plugs-config/trouble.lua
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim
 

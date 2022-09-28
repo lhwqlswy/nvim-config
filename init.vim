@@ -6,7 +6,6 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 set cmdheight=2
 set colorcolumn=80
-set completeopt=longest,menuone,noinsert,noselect
 set encoding=utf8
 "set esckeys
 set nohlsearch

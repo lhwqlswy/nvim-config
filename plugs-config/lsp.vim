@@ -6,6 +6,7 @@ luafile ~/.config/nvim/lsp/lua.lua
 luafile ~/.config/nvim/lsp/vim.lua
 luafile ~/.config/nvim/lsp/golang.lua
 luafile ~/.config/nvim/lsp/ts.lua
+luafile ~/.config/nvim/lsp/python.lua
 luafile ~/.config/nvim/lsp/julia.lua
 
 " LSP mapping

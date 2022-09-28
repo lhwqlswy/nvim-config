@@ -46,7 +46,8 @@ let mapleader=" "
 
 "source $HOME/.config/nvim/plugs-config/airline.vim
 source $HOME/.config/nvim/plugs-config/lsp.vim
-source $HOME/.config/nvim/plugs-config/compe.vim
+"source $HOME/.config/nvim/plugs-config/compe.vim
+luafile $HOME/.config/nvim/plugs-config/cmp.lua
 source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 "source $HOME/.config/nvim/plugs-config/fzf.vim

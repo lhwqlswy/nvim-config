@@ -57,7 +57,7 @@ luafile $HOME/.config/nvim/plugs-config/nvimtree.lua
 "source $HOME/.config/nvim/plugs-config/nerdtree.vim
 luafile $HOME/.config/nvim/plugs-config/nightfox.lua
 "luafile $HOME/.config/nvim/plugs-config/tokyonight.lua
-source $HOME/.config/nvim/plugs-config/treesitter.vim
+luafile $HOME/.config/nvim/plugs-config/treesitter.lua
 luafile $HOME/.config/nvim/plugs-config/trouble.lua
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim

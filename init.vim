@@ -58,9 +58,11 @@ luafile $HOME/.config/nvim/plugs-config/nvimtree.lua
 luafile $HOME/.config/nvim/plugs-config/nightfox.lua
 "luafile $HOME/.config/nvim/plugs-config/tokyonight.lua
 luafile $HOME/.config/nvim/plugs-config/treesitter.lua
+luafile $HOME/.config/nvim/plugs-config/todocomments.lua
 luafile $HOME/.config/nvim/plugs-config/trouble.lua
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim
+source $HOME/.config/nvim/plugs-config/vsnip.vim
 
 filetype on
 filetype plugin on

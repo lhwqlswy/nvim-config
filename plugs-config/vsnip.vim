@@ -1,11 +1,11 @@
-lua << EOF
-require'cmp'.setup {
-  sources = {
-    { name = 'vsnip' }
-  }
-}
-EOF
-
+" done in cmp.lua
+" lua << EOF
+" require'cmp'.setup {
+"   sources = {
+"     { name = 'vsnip' }
+"   }
+" }
+" EOF
 " Expand
 " imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 " smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
@@ -31,4 +31,4 @@ smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-T
 " let g:vsnip_filetypes = {}
 " let g:vsnip_filetypes.javascriptreact = ['javascript']
 " let g:vsnip_filetypes.typescriptreact = ['typescript']
-let g:vsnip_snippet_dir = expand('~/.config/nvim/vsnip') 
+" let g:vsnip_snippet_dir = expand('~/.config/nvim/vsnip') 

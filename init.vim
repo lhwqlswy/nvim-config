@@ -86,6 +86,8 @@ nnoremap <Leader>tc :tabclose<CR>
 " nearest square bracket
 nnoremap ]b :call searchpair('\[','','\]')<cr>
 nnoremap [b :call searchpair('\[','','\]','b')<cr>
+" terminal mode
+tnoremap <Esc> <C-\><C-n>
 
 " yank
 au TextYankPost * silent! lua vim.highlight.on_yank {timeout=500}

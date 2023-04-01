@@ -1,0 +1,26 @@
+{
+  "useQuery": {
+    "prefix": ["usequery"],
+    "body": [
+      "const { isLoading, data, refecth } = useQuery(",
+      "  [${1:key}, {${2:dependencies}}],",
+      "  async () => {",
+      "    $0",
+      "  }",
+      ");",
+    ],
+    "description": "useQuery method shortcut",
+  },
+  "sample_component": {
+    "prefix": ["sample_component"],
+    "body": [
+      "<SampleComponent",
+      "  field1={${1:field1}}",
+      "  field2={${2:field2}}",
+      "  field3={${3:field3}}",
+      ">",
+      "  ${0:text here}",
+      "</SampleComponent>"
+    ],
+  }
+}

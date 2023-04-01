@@ -2,6 +2,7 @@ set completeopt=longest,menuone,noinsert,noselect
 let g:completion_matching_strategy_list=['exact', 'substring', 'fuzzy']
 
 " LSP
+luafile ~/.config/nvim/lsp/astro.lua
 luafile ~/.config/nvim/lsp/lua.lua
 luafile ~/.config/nvim/lsp/vim.lua
 luafile ~/.config/nvim/lsp/golang.lua
@@ -21,6 +22,7 @@ nnoremap <silent> g] <cmd>lua vim.diagnostic.goto_next()<CR>
 nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
 
 " LSP auto-format
+autocmd BufWritePre *.astro lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)

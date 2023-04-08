@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'folke/todo-comments.nvim'
   Plug 'folke/trouble.nvim'
+  Plug 'kshenoy/vim-signature'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'

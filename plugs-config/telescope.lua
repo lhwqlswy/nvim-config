@@ -1,4 +1,4 @@
-require "telescope".setup{
+require "telescope".setup {
   defaults = {
     vimgrep_arguments = {
       'rg',
@@ -22,11 +22,20 @@ require "telescope".setup{
   }
 }
 
-vim.api.nvim_set_keymap('n', '<Leader>pf', ':lua require"telescope.builtin".find_files({hidden = true})<cr>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>pb', '<cmd>Telescope buffers<cr>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>ps', '<cmd>Telescope live_grep<cr>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>pw', '<cmd>Telescope grep_string<cr>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>pgb', '<cmd>Telescope git_branches<cr>', {noremap = true})
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<Leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<Leader>pb', builtin.buffers, {})
+vim.keymap.set('n', '<Leader>ps', builtin.live_grep, {})
+vim.keymap.set('n', '<Leader>pw', builtin.grep_string, {})
+vim.keymap.set('n', '<Leader>ph', builtin.help_tags, {})
+vim.keymap.set('n', '<Leader>pk', builtin.keymaps, {})
+vim.keymap.set('n', '<Leader>pc', builtin.autocommands, {})
+
+-- lsp
+vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
+vim.keymap.set('n', 'gr', builtin.lsp_references, {})
+vim.keymap.set('n', 'gi', builtin.lsp_implementations, {})
+vim.keymap.set('n', '<C-I>',function() vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true }) end, {})
 
 -- fzf native
 -- You dont need to set any of these options. These are the default ones. Only
@@ -34,11 +43,11 @@ vim.api.nvim_set_keymap('n', '<Leader>pgb', '<cmd>Telescope git_branches<cr>', {
 require('telescope').setup {
   extensions = {
     fzf = {
-      fuzzy = true,                    -- false will only do exact matching
-      override_generic_sorter = true,  -- override the generic sorter
-      override_file_sorter = true,     -- override the file sorter
-      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-                                       -- the default case_mode is "smart_case"
+      fuzzy = true,                   -- false will only do exact matching
+      override_generic_sorter = true, -- override the generic sorter
+      override_file_sorter = true,    -- override the file sorter
+      case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
+      -- the default case_mode is "smart_case"
     }
   }
 }

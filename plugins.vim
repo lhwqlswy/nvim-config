@@ -5,7 +5,7 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'nanozuki/tabby.nvim'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'folke/todo-comments.nvim'
-  Plug 'folke/trouble.nvim'
+  " Plug 'folke/trouble.nvim'
   Plug 'kshenoy/vim-signature'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'nvim-lua/plenary.nvim'
@@ -38,7 +38,7 @@ call plug#begin('~/.config/nvim/plugs')
   "Plug 'vim-airline/vim-airline'
   "Plug 'vim-airline/vim-airline-themes'
   Plug 'vim-utils/vim-man'
-  Plug 'voldikss/vim-floaterm'
+  "Plug 'voldikss/vim-floaterm'
   "Plug 'vimwiki/vimwiki'
   Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()

@@ -48,7 +48,7 @@ let mapleader=" "
 source $HOME/.config/nvim/plugs-config/lsp.vim
 "source $HOME/.config/nvim/plugs-config/compe.vim
 luafile $HOME/.config/nvim/plugs-config/cmp.lua
-source $HOME/.config/nvim/plugs-config/floaterm.vim
+"source $HOME/.config/nvim/plugs-config/floaterm.vim
 source $HOME/.config/nvim/plugs-config/fugitive.vim
 "source $HOME/.config/nvim/plugs-config/fzf.vim
 luafile $HOME/.config/nvim/plugs-config/telescope.lua
@@ -59,7 +59,7 @@ luafile $HOME/.config/nvim/plugs-config/nightfox.lua
 "luafile $HOME/.config/nvim/plugs-config/tokyonight.lua
 luafile $HOME/.config/nvim/plugs-config/treesitter.lua
 luafile $HOME/.config/nvim/plugs-config/todocomments.lua
-luafile $HOME/.config/nvim/plugs-config/trouble.lua
+"luafile $HOME/.config/nvim/plugs-config/trouble.lua
 "source $HOME/.config/nvim/plugs-config/rg.vim
 source $HOME/.config/nvim/plugs-config/undotree.vim
 source $HOME/.config/nvim/plugs-config/vsnip.vim

@@ -29,13 +29,17 @@ vim.keymap.set('n', '<Leader>ps', builtin.live_grep, {})
 vim.keymap.set('n', '<Leader>pw', builtin.grep_string, {})
 vim.keymap.set('n', '<Leader>ph', builtin.help_tags, {})
 vim.keymap.set('n', '<Leader>pk', builtin.keymaps, {})
+vim.keymap.set('n', '<Leader>pi', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', '<Leader>po', builtin.lsp_outgoing_calls, {})
 vim.keymap.set('n', '<Leader>pc', builtin.autocommands, {})
 
 -- lsp
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'gr', builtin.lsp_references, {})
 vim.keymap.set('n', 'gi', builtin.lsp_implementations, {})
-vim.keymap.set('n', '<C-I>',function() vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true }) end, {})
+vim.keymap.set('n', 'gs', builtin.lsp_document_symbols, {})
+vim.keymap.set('n', '<C-I>',
+  function() vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true }) end, {})
 
 -- fzf native
 -- You dont need to set any of these options. These are the default ones. Only

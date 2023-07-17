@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'kshenoy/vim-signature'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
   Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
   Plug 'mbbill/undotree'
   Plug 'mhinz/vim-startify'

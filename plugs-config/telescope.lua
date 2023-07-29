@@ -36,7 +36,8 @@ vim.keymap.set('n', '<Leader>pc', builtin.autocommands, {})
 -- lsp
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'gr', builtin.lsp_references, {})
-vim.keymap.set('n', 'gi', builtin.lsp_implementations, {})
+vim.keymap.set('n', 'gx', builtin.diagnostics, {})
+vim.keymap.set('n', 'gi', function() builtin.lsp_implementations({ fname_width = 100 }) end, {})
 vim.keymap.set('n', 'gs', builtin.lsp_document_symbols, {})
 vim.keymap.set('n', '<C-I>',
   function() vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true }) end, {})

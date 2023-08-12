@@ -16,24 +16,26 @@ require "nvim-treesitter.configs".setup {
     enable = true
   },
   ensure_installed = {
+    "astro",
     "css",
     "go",
+    "html",
     "javascript",
+    "json",
+    "lua",
+    "markdown",
+    "python",
+    "scss",
     "tsx",
     "typescript",
-    "vim",
     "toml",
-    "json",
-    "yaml",
-    "html",
-    "lua",
-    "python",
-    "scss"
+    "vim",
+    "yaml"
   },
   playground = {
     enable = true,
     disable = {},
-    updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
+    updatetime = 25,         -- Debounced time for highlighting nodes in the playground from source code
     persist_queries = false, -- Whether the query persists across vim sessions
     keybindings = {
       toggle_query_editor = 'o',

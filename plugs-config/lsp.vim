@@ -3,6 +3,7 @@ let g:completion_matching_strategy_list=['exact', 'substring', 'fuzzy']
 
 " LSP
 luafile ~/.config/nvim/lsp/astro.lua
+luafile ~/.config/nvim/lsp/dart.lua
 luafile ~/.config/nvim/lsp/lua.lua
 luafile ~/.config/nvim/lsp/vim.lua
 luafile ~/.config/nvim/lsp/golang.lua

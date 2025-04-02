@@ -11,6 +11,7 @@ luafile ~/.config/nvim/lsp/ts.lua
 luafile ~/.config/nvim/lsp/python.lua
 luafile ~/.config/nvim/lsp/julia.lua
 luafile ~/.config/nvim/lsp/markdown.lua
+luafile ~/.config/nvim/lsp/terraform.lua
 
 " LSP mapping
 " use telescope pickers instead

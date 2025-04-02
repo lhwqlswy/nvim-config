@@ -26,6 +26,7 @@ require "nvim-treesitter.configs".setup {
     "markdown",
     "python",
     "scss",
+    "terraform",
     "tsx",
     "typescript",
     "toml",

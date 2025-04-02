@@ -7,11 +7,13 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'folke/todo-comments.nvim'
   " Plug 'folke/trouble.nvim'
   Plug 'kshenoy/vim-signature'
+  Plug 'mfussenegger/nvim-dap'
+  Plug 'mxsdev/nvim-dap-vscode-js'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
   Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
-  Plug 'mbbill/undotree'
+  " Plug 'mbbill/undotree'
   Plug 'mhinz/vim-startify'
   Plug 'morhetz/gruvbox'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
@@ -32,6 +34,8 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'kyazdani42/nvim-tree.lua'
   "Plug 'preservim/nerdtree'
   "Plug 'tbabej/taskwiki'
+  Plug 'rcarriga/nvim-dap-ui'
+  Plug 'nvim-neotest/nvim-nio'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'

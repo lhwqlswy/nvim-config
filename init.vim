@@ -54,6 +54,7 @@ source $HOME/.config/nvim/plugs-config/fugitive.vim
 luafile $HOME/.config/nvim/plugs-config/telescope.lua
 luafile $HOME/.config/nvim/plugs-config/indent.lua
 luafile $HOME/.config/nvim/plugs-config/nvimtree.lua
+luafile $HOME/.config/nvim/plugs-config/dap.lua
 "source $HOME/.config/nvim/plugs-config/nerdtree.vim
 luafile $HOME/.config/nvim/plugs-config/nightfox.lua
 "luafile $HOME/.config/nvim/plugs-config/tokyonight.lua

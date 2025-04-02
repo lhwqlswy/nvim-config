@@ -2,3 +2,4 @@ autoload
 plugs
 undo
 fdb
+dap/vscode-js-debug

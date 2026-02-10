@@ -11,13 +11,13 @@ call plug#begin('~/.config/nvim/plugs')
   Plug 'mxsdev/nvim-dap-vscode-js'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
-  Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '*' }
+  Plug 'nvim-telescope/telescope-symbols.nvim'
+  Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' }
   " Plug 'mbbill/undotree'
   Plug 'mhinz/vim-startify'
   Plug 'morhetz/gruvbox'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-  Plug 'nvim-treesitter/playground'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/cmp-nvim-lsp'

@@ -1,1 +1,1 @@
-require'lspconfig'.julials.setup{}
+-- require'lspconfig'.julials.setup{}
